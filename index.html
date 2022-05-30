@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap" rel="stylesheet">
+
+
+    <style>
+        .card {
+            margin-top: 20px;
+        }
+
+
+        @media (max-width: 1440px) {
+            body {
+                width: auto;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                width: auto;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            body {
+                width: auto;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            body {
+                width: auto;
+                padding: 10px;
+
+            }
+
+        }
+
+        body {
+            background-color: #d4ceb0;
+        }
+
+
+        .btn-light {
+            color: #1a202c;
+            background-color: #fff;
+            border-color: #cbd5e0;
+        }
+
+
+        .fa {
+            padding: 10px;
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+        .fa:hover {
+            opacity: 1;
+            background-color: darkgray;
+        }
+
+
+        footer {
+            padding-top: 20px;
+            padding-left: 80px;
+            padding-bottom: 20px;
+            background-color: #e6e2d3;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 855px) {
+            footer {
+                padding-left: 0px;
+
+            }
+
+            .pshs {
+                display: none;
+            }
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        #navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #674f04;
+            margin-bottom: 20px;
+        }
+
+        li {
+            float: left;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15pt;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #a28f70;
+            color: white;
+        }
+
+        .active {
+            background-color: #d3bd9a;
+            ;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+
+        .price {
+            color: grey;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .card button {
+            border: none;
+            outline: 0;
+            color: white;
+            background-color: #d3bd9a;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .card button:hover {
+            opacity: 0.7;
+        }
+
+        p {
+            text-align: center;
+            font-size: 8pt;
+            text-align: justify;
+            padding: 20px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        h1 {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 20pt;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            display: block;
+            font-size: 40pt;
+            padding: 20px;
+        }
+
+        h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 35pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-family: 'Tiro Devanagari Marathi', serif;
+            font-size: 20pt;
+            font-weight: bold;
+        }
+
+        h5 {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 20pt;
+        }
+
+        h6 {
+            font-family: 'Tiro Devanagari Marathi', serif;
+            font-size: 15pt;
+        }
+    </style>
+    <script>
+        var cust_order = [];
+        var totalPrice = 0;
+
+        function displayProduct() {
+            console.log(cust_order);
+            document.getElementById("ulCart").innerHTML = "";
+            var totalPrice = 0;
+            for (var i = 0; i < cust_order.length; i++) {
+                if (cust_order[i] != "fake") {
+                    document.getElementById("ulCart").innerHTML += "<tr><td><h5><strong id=" + i + ">" + cust_order[i].prod_name +
+                        "</strong></h5><br><h6>₱" + cust_order[i].prod_price + ".00" + "&nbsp;" + "</h6></td><td><button id='something' ' class='btn btn-danger' style='float: right;' onClick='removeItem(" + i + ")'>Remove</button></td></tr>" + "</br></br>";
+
+                    var productPrice = cust_order[i].prod_price;
+                    totalPrice = totalPrice + productPrice;
+                }
+            }
+            document.getElementById("pageTotal").innerHTML = "Total Price: " + "₱" + totalPrice;
+        }
+
+        function removeItem(index) {
+            cust_order[index] = "fake";
+            displayProduct();
+        }
+
+        function clothingOne() {
+            var cloth1 = {
+                prod_name: "AlDub Nation T-Shirt",
+                prod_price: 150
+            };
+            cust_order.push(cloth1);
+            displayProduct();
+            cloth1 = {};
+        }
+
+        function clothingTwo() {
+            var cloth2 = {
+                prod_name: "Comme des Garfield",
+                prod_price: 420
+            };
+            cust_order.push(cloth2);
+            displayProduct();
+            cloth2 = {};
+        }
+
+        function clothingThree() {
+            var cloth3 = {
+                prod_name: "Domo - Face Soft T-Shirt",
+                prod_price: 290
+            };
+            cust_order.push(cloth3);
+            displayProduct();
+            cloth3 = {};
+        }
+
+        function clothingFour() {
+            var cloth4 = {
+                prod_name: "E-masculated",
+                prod_price: 0
+            };
+            cust_order.push(cloth4);
+            displayProduct();
+            cloth4 = {};
+        }
+
+        function clothingFive() {
+            var cloth5 = {
+                prod_name: "I Love Baguio T-Shirt",
+                prod_price: 170
+            };
+            cust_order.push(cloth5);
+            displayProduct();
+            cloth5 = {};
+        }
+
+        function clothingSix() {
+            var cloth6 = {
+                prod_name: "Weirdo Couple Shirt",
+                prod_price: 690
+            };
+            cust_order.push(cloth6);
+            displayProduct();
+            cloth6 = {};
+        }
+
+        function shoesOne() {
+            var shoe1 = {
+                prod_name: "The Superficial",
+                prod_price: 1900
+            };
+            cust_order.push(shoe1);
+            displayProduct();
+            shoe1 = {};
+        }
+
+        function shoesTwo() {
+            var shoe2 = {
+                prod_name: "Camel [Redacted]",
+                prod_price: 1500
+            };
+            cust_order.push(shoe2);
+            displayProduct();
+            shoe2 = {};
+        }
+
+        function shoesThree() {
+            var shoe3 = {
+                prod_name: "Don't Cancel Us",
+                prod_price: 1800
+            };
+            cust_order.push(shoe3);
+            displayProduct();
+            shoe3 = {};
+        }
+
+        function shoesFour() {
+            var shoe4 = {
+                prod_name: "The Incinerator",
+                prod_price: 1300
+            };
+            cust_order.push(shoe4);
+            displayProduct();
+            shoe4 = {};
+        }
+
+        function shoesFive() {
+            var shoe5 = {
+                prod_name: "Goblin Shoes",
+                prod_price: 200
+            };
+            cust_order.push(shoe5);
+            displayProduct();
+            shoe5 = {};
+        }
+
+        function shoesSix() {
+            var shoe6 = {
+                prod_name: "Neon Ball Shoes",
+                prod_price: 1200
+            };
+            cust_order.push(shoe6);
+            displayProduct();
+            shoe6 = {};
+        }
+
+        function accessOne() {
+            var acc1 = {
+                prod_name: "Help Necklace",
+                prod_price: 740
+            };
+            cust_order.push(acc1);
+            displayProduct();
+            acc1 = {};
+        }
+
+        function accessTwo() {
+            var acc2 = {
+                prod_name: "Fruit Necklace",
+                prod_price: 520
+            };
+            cust_order.push(acc2);
+            displayProduct();
+            acc2 = {};
+        }
+
+        function accessThree() {
+            var acc3 = {
+                prod_name: "24-Carrot",
+                prod_price: 600
+            };
+            cust_order.push(acc3);
+            displayProduct();
+            acc3 = {};
+        }
+
+        function accessFour() {
+            var acc4 = {
+                prod_name: "Tooth Ring",
+                prod_price: 870
+            };
+            cust_order.push(acc4);
+            displayProduct();
+            acc4 = {};
+        }
+
+        function accessFive() {
+            var acc5 = {
+                prod_name: "Rebel Earrings",
+                prod_price: 600
+            };
+            cust_order.push(acc5);
+            displayProduct();
+            acc5 = {};
+        }
+
+        function accessSix() {
+            var acc6 = {
+                prod_name: "Anti-Vegan Earrings",
+                prod_price: 380
+            };
+            cust_order.push(acc6);
+            displayProduct();
+            acc6 = {};
+        }
+
+        function pantsOne() {
+            var pan1 = {
+                prod_name: "Curtain Couture",
+                prod_price: 890
+            };
+            cust_order.push(pan1);
+            displayProduct();
+            pan1 = {};
+        }
+
+        function pantsTwo() {
+            var pan2 = {
+                prod_name: "Vaporwave Jeggings",
+                prod_price: 520
+            };
+            cust_order.push(pan2);
+            displayProduct();
+            pan2 = {};
+        }
+
+        function pantsThree() {
+            var pan3 = {
+                prod_name: "Merry Crisis",
+                prod_price: 300
+            };
+            cust_order.push(pan3);
+            displayProduct();
+            pan3 = {};
+        }
+
+        function pantsFour() {
+            var pan4 = {
+                prod_name: "The Sags",
+                prod_price: 450
+            };
+            cust_order.push(pan4);
+            displayProduct();
+            pan4 = {};
+        }
+
+        function pantsFive() {
+            var pan5 = {
+                prod_name: "The Highlighter",
+                prod_price: 660
+            };
+            cust_order.push(pan5);
+            displayProduct();
+            pan5 = {};
+        }
+
+        function pantsSix() {
+            var pan6 = {
+                prod_name: "It's Love",
+                prod_price: 270
+            };
+            cust_order.push(pan6);
+            displayProduct();
+            pan6 = {};
+        }
+
+        function toStringFunction() {
+            var i = cust_order.length;
+
+            while (i--) {
+                if (cust_order[i] === "fake") {
+                    cust_order.splice(cust_order.indexOf("fake"), 1);
+                }
+            }
+            console.log(cust_order);
+            toStringFunctionreal();
+        }
+        function toStringFunctionreal() {
+            var products = JSON.stringify(cust_order);
+            document.getElementById("cust_order").value = products;
+        }
+    </script>
+</head>
+
+<body>
+    <ul id="navbar">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="details.html">DETAILS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+    </ul>
+    <div class="container-fluid">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/281810786_317060117273153_948300915969716490_n.png?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=2hv0MfuQz5EAX-07XjE&_nc_ht=scontent.fbag1-2.fna&oh=03_AVIuhBYpfYdxCSq6s5xC2LHy-a417cJwOJ-sNI4VYwTpTw&oe=62B9B2E6"
+                        alt="J2KClothing" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/280479793_1076753179603248_2259764895606788409_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=mvcc6N1PabgAX_RHKc-&_nc_ht=scontent.fbag1-2.fna&oh=03_AVJUdpSOfWVonnyOfdpdPGnyd8lUZ89ggpFygPh3sBmyUg&oe=62B6D6B3"
+                        alt="J2KSale" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/282159280_724185008707367_2459346816318955961_n.png?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=f-AlHeMeZYwAX-Jc_g-&_nc_ht=scontent.fbag1-2.fna&oh=03_AVLrvkk3slFbNN8O8ePsINC4j2MMavSgcBCDOHi1DFJ0ew&oe=62B874EC"
+                        alt="J2K50%OFF" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/280682427_5130364587042407_1162990873407158990_n.png?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=wdaCiTXlETEAX9eA9s-&_nc_ht=scontent.fbag1-2.fna&oh=03_AVIuH6vFBFDO0KxGUq422wQeP6yyfmiUp3M5FTtgP3A0mA&oe=62B784F2"
+                        alt="J2KAccessories" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/280986690_735845034511953_2440989578866705301_n.png?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=YphZi5igTywAX9BiXlt&_nc_ht=scontent.fbag1-2.fna&oh=03_AVLfi0nqVI2h162GlUp_Jdv_ZjXZ6HHKItPNfq-FtvO6ww&oe=62B9DFD6"
+                        alt="J2KGiftCertificate" style="width:100%;">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="row">
+            <img src="https://media3.giphy.com/media/TZoZWRib5dc5qKpE5s/giphy.gif" alt="Payday Sale"
+                style="width:100%; margin-top: 40px;">
+
+        </div>
+        <div class="row">
+            <img src="https://media4.giphy.com/media/pu67Qobjf1VehRN6Jn/giphy.gif" alt="Flash Deals"
+                style="width:100%; margin-top: 40px;">
+        </div>
+        <div class="main-body">
+            <h2 class="font-weight-bolder">DAILY DISCOVER</h2>
+            <h3>clothing</h3>
+            <div class="row">
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/281051440_1200096897432923_3060204679879397040_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=2lDg6MISN8cAX82AHA5&_nc_oc=AQl0V0onWpjE3jMXPGZng7F3I2jEXVdWbD9BuA7qZdUJYoNSWRCy_667lklt9jNdQ0M&_nc_ht=scontent.fbag1-2.fna&oh=03_AVJ24DCMYNQ_gJEj0u4Iudxn2vTIlxKUcgkGiUmxs3ASWw&oe=62B698CA"
+                            alt="AlDub Shirt" style="width:100%">
+                        <h1>AlDub Nation T-Shirt</h1>
+                        <p class="price">Php 150</p>
+                        <p><button onclick="clothingOne()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/283747217_556268979179920_3070853781904239236_n.png?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=LsUWfDYJ9CAAX_6remk&_nc_ht=scontent.fbag1-2.fna&oh=03_AVIEMgzpt2WqHYESsFGiyhFb89_bZFdd284ocsj9LFuk3g&oe=62B90128"
+                            alt="Salmon Pink Shirt" style="width:100%">
+                        <h1>Comme des Garfield</h1>
+                        <p class="price">Php 420</p>
+                        <p><button onclick="clothingTwo()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/279572030_395218485864086_5303801492157780631_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=Z_VkGU_HC9kAX871FEZ&tn=Ku06km0UvUg4hQ5X&_nc_ht=scontent.fbag1-2.fna&oh=03_AVIpFpI8ee1F_gPRmJicCzJOaAPCvoD3tk103MYNICL7NA&oe=62B8D6CA"
+                            alt="Domo" style="width:100%">
+                        <h1>Domo - Face Soft T-Shirt </h1>
+                        <p class="price">Php 290</p>
+                        <p><button onclick="clothingThree()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/280213384_1414582125708210_8588401613112542206_n.png?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=PNyA6T-FnSUAX8_DBYo&_nc_ht=scontent.fbag1-2.fna&oh=03_AVJCyb4yD0r6fC9mw9tQ03VpAFEN9NcDzMZgFEl-yLzO2Q&oe=62B86278"
+                            alt="Naked Shirt" style="width:100%">
+                        <h1>E-masculated </h1>
+                        <p class="price">It's free!</p>
+                        <p><button onclick="clothingFour()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/280191883_1732543053779981_1610992071983444837_n.png?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=11CGH9_tf-8AX-LRL6r&_nc_oc=AQkxcVz8Si2z0oW7-dHWpGVmcUa5xvKCBvQncyPDRLGJcEnw4Hn2frQJjSIvg1bMNBs&_nc_ht=scontent.fbag1-2.fna&oh=03_AVK10Y8ghOI7dcFBgd64bQrUd6QSqlc5BrTLKoygYKWykQ&oe=62B6B463"
+                            alt="I love Baguio" style="width:100%">
+                        <h1>I Love Baguio T-Shirt</h1>
+                        <p class="price">Php 170</p>
+                        <p><button onclick="clothingFive()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/282238275_1218085242348145_892820264915304950_n.png?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=jFfOMEk6S-0AX9Yfmsf&_nc_ht=scontent.fbag1-2.fna&oh=03_AVI5Zk1Am1ZprmodK2SiBO1cri7FC3oZn53siK_XhOisJg&oe=62B9EC08"
+                            alt="CoupleTShirt" style="width:100%">
+                        <h1>Weirdo Couple Shirt</h1>
+                        <p class="price">Php 690</p>
+                        <p><button onclick="clothingSix()">Add to Cart</button></p>
+                    </div>
+                </div>
+            </div>
+            <h3>shoes</h3>
+            <div class="row">
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/281915934_356976433002952_7043385721066746116_n.png?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=DgiZifN_UfkAX_ovVBS&_nc_ht=scontent.fbag1-2.fna&oh=03_AVLiO6nX55Kv09IVJy4UmdBeZU5di-hSFSSAJ0AlMgm23g&oe=62BA2DE1"
+                            alt="Barbie Shoes" style="width:100%">
+                        <h1>The Superficial</h1>
+                        <p class="price">Php 1900</p>
+                        <p><button onclick = "shoesOne()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/280551783_306208811720866_1141894889321312627_n.png?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=ljuYprhTbMYAX8Yl4sN&_nc_ht=scontent.fbag1-2.fna&oh=03_AVILri5kYESmdT20xB5rgkUQMHfkCFIRIb50TzhIdKFJlQ&oe=62B6FC20"
+                            alt="Disconnected Shoes" style="width:100%">
+                        <h1>Camel [Redacted]</h1>
+                        <p class="price">Php 1500</p>
+                        <p><button onclick = "shoesTwo()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/280404904_741428937271010_7447975392945258461_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=WLpE3S5_NI8AX_LhgJG&_nc_ht=scontent.fbag1-2.fna&oh=03_AVKjyOxh6P6hCDr0x_FHd-rUytuIJZMOk30QLPxt5DBTpQ&oe=62B94E7A"
+                            alt="Masked Shoes" style="width:100%">
+                        <h1>Don't Cancel Us</h1>
+                        <p class="price">Php 1800</p>
+                        <p><button onclick = "shoesThree()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/284361316_357447099815956_6131590249437997399_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=zdU7mfM_uJIAX_W-qZW&tn=Ku06km0UvUg4hQ5X&_nc_ht=scontent.fbag1-2.fna&oh=03_AVI_ILGoC8NsApF3EuAOnBiLIwEW90OlOufl3juigqLdJA&oe=62B8792F"
+                            alt="Plastic Shoes" style="width:100%">
+                        <h1>The Incinerator</h1>
+                        <p class="price">Php 1300</p>
+                        <p><button onclick = "shoesFour()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/279724850_1009772756389248_2948499569354967237_n.png?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=uWZEZBIxWXwAX9WjzrW&_nc_ht=scontent.fbag1-2.fna&oh=03_AVJwrhhIEs66qWAJBVHuU7UIAqorH1YSQjM4GQGOGgGHlg&oe=62BA4F94"
+                            alt="Goblin Shoes" style="width:100%">
+                        <h1>Goblin Shoes</h1>
+                        <p class="price">Php 200</p>
+                        <p><button onclick = "shoesFive()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/281704467_972426670093196_6312596134449298573_n.png?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=9aEV8gAHC2kAX_jK--r&_nc_ht=scontent.fbag1-2.fna&oh=03_AVL39aQr2UoF5ojqjXpg8XWw6W7sdN0QIuXd0ENobFZWog&oe=62B6A628"
+                            alt="Neon Ball Shoes" style="width:100%">
+                        <h1>Neon Ball Shoes</h1>
+                        <p class="price">Php 1200</p>
+                        <p><button onclick = "shoesSix()">Add to Cart</button></p>
+                    </div>
+                </div>
+            </div>
+            <h3>accessories</h3>
+            <div class="row">
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/280297321_3059448997605379_5692607634098728370_n.png?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=ojpSh3w26rYAX-7mejA&_nc_ht=scontent.fbag1-2.fna&oh=03_AVJWo7OCehR_FVkfP-X7cAxHtEzL_UfUn1ZE2Tx0gQcUzQ&oe=62BA1DF8"
+                            alt="Help Necklace" style="width:100%">
+                        <h1>Help Necklace</h1>
+                        <p class="price">Php 740</p>
+                        <p><button onclick="accessOne()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/281822422_1051767559096965_6509004054384046399_n.png?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=O7mrI19gqGQAX90-iof&_nc_ht=scontent.fbag1-2.fna&oh=03_AVI2ZrDoLFM8trx7c6O796oF1lxSpZtNLPz9pZhZqu1HCA&oe=62B7C128"
+                            alt="Fruit Necklace" style="width:100%">
+                        <h1>Fruit Necklace</h1>
+                        <p class="price">Php 520</p>
+                        <p><button onclick="accessTwo()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/281147652_4677977388969771_3380432417676699885_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=dkzhwjJ8HNoAX_04UFa&_nc_ht=scontent.fbag1-2.fna&oh=03_AVKQli05ZMv6nsMUuBaKdnm-bojFo0BD9suEceGJcuXsAA&oe=62B7F649"
+                            alt="Carrot Necklace" style="width:100%">
+                        <h1>24-Carrot</h1>
+                        <p class="price">Php 600 </p>
+                        <p><button onclick="accessThree()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/281889756_5207862179321145_3195074256988391261_n.png?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=dsJ8Tcc8gJMAX9B7Bbr&_nc_ht=scontent.fbag1-2.fna&oh=03_AVLVC1rxgOdv6egUp6ZwYLbrfYv0_MdOhsJgGnfnmBFahg&oe=62B75166"
+                            alt="Plastic Shoes" style="width:100%">
+                        <h1>Tooth Ring</h1>
+                        <p class="price">Php 870</p>
+                        <p><button onclick="accessFour()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/280453915_709022017088114_6824803678694161968_n.png?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_ohc=XjwosWWiKVQAX-pB7M2&_nc_oc=AQkuOcQnAof0aONgMUW2oSJvhL3aNyWvM9VGie2nES7tTYUzytopul8c0ppE_n-1WXE&_nc_ht=scontent.fbag1-2.fna&oh=03_AVJlosKo5Uve8kC-7TqqbNIwX9NRMMGKW0nIGhlFSLtmbQ&oe=62B85BBC"
+                            alt="Rebel Earring" style="width:100%">
+                        <h1>Rebel Earrings</h1>
+                        <p class="price">Php 600</p>
+                        <p><button onclick="accessFive()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/281405485_1420298291751869_5702932021584036447_n.png?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=pORCwcmser0AX90cWTC&tn=Ku06km0UvUg4hQ5X&_nc_ht=scontent.fbag1-2.fna&oh=03_AVJHD9ldHgsOPHHdNhOsG7BYrWlrSrW16Us_CzaftMowJw&oe=62B96D17"
+                            alt="Bacon Earrings" style="width:100%">
+                        <h1>Anti-Vegan Earrings</h1>
+                        <p class="price">Php 380</p>
+                        <p><button onclick="accessSix()">Add to Cart</button></p>
+                    </div>
+                </div>
+            </div>
+            <h3>pants</h3>
+            <div class="row">
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t1.15752-9/282192638_470226051537884_2704517951408091038_n.png?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=qlLIuEN-X-oAX_zkfAA&_nc_ht=scontent.fcrk1-5.fna&oh=03_AVI322N2iGdxZlyg0bBzvNTrI6AXVDU3c32FO_ZrBH3sWA&oe=62B9D534"
+                            alt="Curtain Couture" style="width:100%">
+                        <h1>Curtain Couture</h1>
+                        <p class="price">Php 890</p>
+                        <p><button onclick="pantsOne()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.15752-9/281804924_315113847328182_5095346611434546639_n.png?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=uW-bOal-hhkAX_CZOW0&_nc_ht=scontent.fcrk1-1.fna&oh=03_AVJyYrhHzAyOOFhxODUhD_fKajnO3dbNTrbCSdV4B8kPQw&oe=62B94D03"
+                            alt="Vaporwave Jeggings" style="width:100%">
+                        <h1>Vaporwave Jeggings</h1>
+                        <p class="price">Php 520</p>
+                        <p><button onclick="pantsTwo()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t1.15752-9/281599127_349462747274232_7315217751746301148_n.png?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=DI1WFssf0dEAX_JQQZI&_nc_oc=AQlk5srSQMHihFLk7kwozlzO3JagWJJBxZasyY_R4eD8yVKRdnQf63fDIDu4waR17vE&_nc_ht=scontent.fcrk1-3.fna&oh=03_AVLPKvLMKTUxHGpTGjZGF1wMSklBVl-ojCydUjQRk3wNMg&oe=62B8DDD2"
+                            alt="Merry Crisis" style="width:100%">
+                        <h1>Merry Crisis</h1>
+                        <p class="price">Php 300 </p>
+                        <p><button onclick="pantsThree()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t1.15752-9/281893270_1212173216186906_8869736125855792414_n.png?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=kWoHoOxMBJkAX8ssR8A&tn=Ku06km0UvUg4hQ5X&_nc_ht=scontent.fcrk1-5.fna&oh=03_AVLFMgMmEFArTX8iWkWSrhh31O0cakCQZM7mNkND1udhQw&oe=62B808B9"
+                            alt="The Sags" style="width:100%">
+                        <h1>The Sags</h1>
+                        <p class="price">Php 450</p>
+                        <p><button onclick="pantsFour()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t1.15752-9/282279787_340104318264945_4451815404099415490_n.png?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=trt7WQtsomsAX-CeXc8&_nc_ht=scontent.fcrk1-5.fna&oh=03_AVJv67pavYoJ5rgCLekn0rBcY2BmhqwFZXYawZbAw_GzTw&oe=62B8E908"
+                            alt="The Highlighter" style="width:100%">
+                        <h1>The Highlighter</h1>
+                        <p class="price">Php 660</p>
+                        <p><button onclick="pantsFive()">Add to Cart</button></p>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card">
+                        <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t1.15752-9/280691909_3311826015751690_2983165109645992520_n.png?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=BbvkWzjBvSwAX-jnfKl&tn=Ku06km0UvUg4hQ5X&_nc_ht=scontent.fcrk1-5.fna&oh=03_AVJZTjgDTKk538ajb0cQpmU2ja3K9vGHUCpST3Ln1mzgeg&oe=62B9F92E"
+                            alt="It's Love" style="width:100%">
+                        <h1>It's Love</h1>
+                        <p class="price">Php 270</p>
+                        <p><button onclick="pantsSix()">Add to Cart</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h4>Cart</h4>
+            <table id="ulCart" class="table table-hover"></table>
+            
+        </div>
+    </div>
+    <footer class="footer">
+        <div>
+            <div class="customer-title">
+                <h3>Delivery Details</h3>
+            </div>
+            <form method="get" action="http://sirjm.infinityfreeapp.com/checkout.php">
+                <label for="cust_name" class="cust_name">Name of Customer:</label>
+                <br>
+                <input type="text" id="cust_name" name="cust_name" placeholder="Enter Name"><br>
+                <br>
+                <label for="cust_email" class="cust_email">Email Address:</label>
+                <br>
+                <input type="text" id="cust_email" name="cust_email" placeholder="Enter Email"><br>
+                <br>
+                <label for="cust_addr" class="cust_addr">Address of Customer:</label>
+                <br>
+                <input type="text" id="cust_addr" name="cust_addr" placeholder="Enter Address ">
+                <input type="hidden" name="cust_order" value="" id="cust_order"><br><br>
+                <input class="btn btn-primary" type="submit" onclick="toStringFunction()" id="submit">
+            </form>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

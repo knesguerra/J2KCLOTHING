@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Details</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Lobster&display=swap" rel="stylesheet">
+
+    <style>
+        .card {
+            margin-top: 20px;
+        }
+
+
+        @media (max-width: 1440px) {
+      body {
+        width: auto;
+        padding: 10px;
+        background-color:#d4ceb0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        width: auto;
+        padding: 10px;
+        background-color:#d4ceb0;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      body {
+        width: auto;
+        padding: 10px;
+        background-color:#d4ceb0;
+      }
+    }
+
+    @media (max-width: 360px) {
+      body {
+        width: auto;
+        padding: 10px;
+        background-color:#d4ceb0;
+      }
+
+    }
+
+        body{
+            background-color: #f5f0e8;
+        }
+
+
+        .btn-light {
+            color: #1a202c;
+            background-color: #fff;
+            border-color: #cbd5e0;
+        }
+
+
+        .fa {
+            padding: 10px;
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+        .fa:hover {
+            opacity: 1;
+            background-color: darkgray;
+        }
+
+
+        footer {
+            padding-top: 20px;
+            padding-left: 80px;
+            padding-bottom: 20px;
+            background-color: #e6e2d3;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 855px) {
+            footer {
+                padding-left: 0px;
+
+            }
+
+            .pshs {
+                display: none;
+            }
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #674f04;
+            margin-bottom: 20px;
+        }
+
+        li {
+            float: left;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15pt;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #a28f70;
+            color: white;
+        }
+
+        .active {
+            background-color:  #d3bd9a;;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            margin-top: 20px;
+        }
+
+        .price {
+            color: grey;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #d3bd9a;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .card button:hover {
+        opacity: 0.7;
+        }
+
+        p {
+            text-align: center;
+            font-size: 14pt;
+            text-align: justify;
+            padding:20px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            text-align:center;
+            display:block;
+            font-size: 40pt;
+            padding: 20px;
+        }
+        footer{
+        background-color: #827055;
+    }
+    #feet{
+        text-align: center;
+        font-family: 'Lobster', cursive;
+        font-size: 50px;
+    }
+    #copyright{
+        text-align: center;
+        font-family: 'Domine', serif;
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="details.html">DETAILS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+    </ul>
+
+    <div class="container">
+
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+
+
+            </ol>
+
+
+            <div class="carousel-inner">
+
+
+                <div class="item active">
+
+                    <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/281810786_317060117273153_948300915969716490_n.png?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=2hv0MfuQz5EAX-07XjE&_nc_ht=scontent.fbag1-2.fna&oh=03_AVIuhBYpfYdxCSq6s5xC2LHy-a417cJwOJ-sNI4VYwTpTw&oe=62B9B2E6"
+                        alt="J2KClothing" style="width:100%;">
+
+                </div>
+
+                <div class="item">
+                    <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/280479793_1076753179603248_2259764895606788409_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=mvcc6N1PabgAX_RHKc-&_nc_ht=scontent.fbag1-2.fna&oh=03_AVJUdpSOfWVonnyOfdpdPGnyd8lUZ89ggpFygPh3sBmyUg&oe=62B6D6B3"
+                        alt="J2KSale" style="width:100%;">
+
+                </div>
+
+                <div class="item">
+                    <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/282159280_724185008707367_2459346816318955961_n.png?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=f-AlHeMeZYwAX-Jc_g-&_nc_ht=scontent.fbag1-2.fna&oh=03_AVLrvkk3slFbNN8O8ePsINC4j2MMavSgcBCDOHi1DFJ0ew&oe=62B874EC"
+                        alt="J2K50%OFF" style="width:100%;">
+
+                </div>
+
+                <div class="item">
+                    <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/280682427_5130364587042407_1162990873407158990_n.png?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=wdaCiTXlETEAX9eA9s-&_nc_ht=scontent.fbag1-2.fna&oh=03_AVIuH6vFBFDO0KxGUq422wQeP6yyfmiUp3M5FTtgP3A0mA&oe=62B784F2"
+                        alt="J2KAccessories" style="width:100%;">
+
+                </div>
+
+                <div class="item">
+                    <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/280986690_735845034511953_2440989578866705301_n.png?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=YphZi5igTywAX9BiXlt&_nc_ht=scontent.fbag1-2.fna&oh=03_AVLfi0nqVI2h162GlUp_Jdv_ZjXZ6HHKItPNfq-FtvO6ww&oe=62B9DFD6"
+                        alt="J2KGiftCertificate" style="width:100%;">
+
+                </div>
+
+            </div>
+
+
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        <div class="main-body">
+
+            <h2>PRODUCT DETAILS</h2>
+
+            <div class="row">
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/281051440_1200096897432923_3060204679879397040_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=2lDg6MISN8cAX82AHA5&_nc_oc=AQl0V0onWpjE3jMXPGZng7F3I2jEXVdWbD9BuA7qZdUJYoNSWRCy_667lklt9jNdQ0M&_nc_ht=scontent.fbag1-2.fna&oh=03_AVJ24DCMYNQ_gJEj0u4Iudxn2vTIlxKUcgkGiUmxs3ASWw&oe=62B698CA"
+                            alt="AlDub Shirt" style="width:100%">
+                        <h1>AlDub Nation T-Shirt</h1>
+                        <p class="price">Php 150</p>
+                        <p style="margin-bottom:40px;">For the teenage Filipino fashion enthusiast, this shirt will surely jog up some old memories
+                            of the seminal noontime show Eat Bulaga, of which our two characters and their clandestine
+                            push-and-pull love story has taken the world by storm. Show that you are one with the AlDub
+                            Nation and cop this shirt now!</p>
+                       
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/283747217_556268979179920_3070853781904239236_n.png?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=LsUWfDYJ9CAAX_6remk&_nc_ht=scontent.fbag1-2.fna&oh=03_AVIEMgzpt2WqHYESsFGiyhFb89_bZFdd284ocsj9LFuk3g&oe=62B90128"
+                            alt="Salmon Pink Shirt" style="width:100%">
+                        <h1>Comme des Garfield</h1>
+                        <p class="price">Php 420</p>
+                        <p>We’ve seen it in shoes! We’ve seen it in hats! What’s stopping us from proudly and artfully
+                            sprawling it across this salmon pink to successfully juxtapose the flesh and the heart, and
+                            the superimposed eyes, to signify that the heart sees beyond the object of attraction’s
+                            worldly body. Wanna feel deep? Cop this shirt now.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/279572030_395218485864086_5303801492157780631_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=Z_VkGU_HC9kAX871FEZ&tn=Ku06km0UvUg4hQ5X&_nc_ht=scontent.fbag1-2.fna&oh=03_AVIpFpI8ee1F_gPRmJicCzJOaAPCvoD3tk103MYNICL7NA&oe=62B8D6CA"
+                            alt="Domo" style="width:100%">
+                        <h1>Domo - Face Soft T-Shirt </h1>
+                        <p class="price">Php 290</p>
+                        <p style="margin-bottom: 170px;">You like brown hairy creatures with big, gaping mouths, and horrifying, pointy teeth. Whatever suits you man, I’m not the weird one here. Buy it… I guess.</p>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/280213384_1414582125708210_8588401613112542206_n.png?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=PNyA6T-FnSUAX8_DBYo&_nc_ht=scontent.fbag1-2.fna&oh=03_AVJCyb4yD0r6fC9mw9tQ03VpAFEN9NcDzMZgFEl-yLzO2Q&oe=62B86278"
+                            alt="Naked Shirt" style="width:100%">
+                        <h1>E-masculated (e is for empathy)</h1>
+                        <p class="price">It's free! Nobody buys this.</p>
+                        <p>This piece is an unfettered vindication of toxic masculinity, dare I say, it’s pure,
+                            intersectional, gender-empathetic activism that proudly embodies the counterculture way of
+                            life: going against the grain in our capitalist, white, straight and male-dominated society.
+                            We can see, whereby the allegorical oppressive threads are loose and breaking, that our
+                            character shows true strength, with true understanding, hence achieving true freedom. Cop
+                            this sh - NO! ALL COPS ARE BASTARDS</p>
+                        
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/280191883_1732543053779981_1610992071983444837_n.png?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=11CGH9_tf-8AX-LRL6r&_nc_oc=AQkxcVz8Si2z0oW7-dHWpGVmcUa5xvKCBvQncyPDRLGJcEnw4Hn2frQJjSIvg1bMNBs&_nc_ht=scontent.fbag1-2.fna&oh=03_AVK10Y8ghOI7dcFBgd64bQrUd6QSqlc5BrTLKoygYKWykQ&oe=62B6B463"
+                            alt="I love Baguio" style="width:100%">
+                        <h1>I Love Baguio T-Shirt</h1>
+                        <p class="price">Php 170</p>
+                        <p>Lovingly crafted by our artisans located in the Cordilleras, this piece is as refreshing, stylistically and literally, as the temperate weather in Baguio City. Support local fashion designers and stay comfy, careless, and cool.
+                        </p>
+                        <p style="margin-bottom:187px;">Wanna feel cool? Cop this shirt now.</p>
+                        &nbsp;
+                        
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/282238275_1218085242348145_892820264915304950_n.png?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=jFfOMEk6S-0AX9Yfmsf&_nc_ht=scontent.fbag1-2.fna&oh=03_AVI5Zk1Am1ZprmodK2SiBO1cri7FC3oZn53siK_XhOisJg&oe=62B9EC08"
+                            alt="CoupleTShirt" style="width:100%">
+                        <h1>Weirdo Couple Shirt</h1>
+                        <p class="price">Php 690</p>
+                        <p style="margin-bottom:175px;">Love is an engrossing thing, but it doesn’t have to be gross. Likewise, love isn’t simple, it’s shared, so when you’re going outside with your partner, you don’t really want to look like a basic, bland, buffoon, just like everyone else. Proclaim your love with this striking statement piece, and the whole world will envy a spectacle like yours. Miserable? Too bad. Fill in that void by buying this shirt.</p>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/281915934_356976433002952_7043385721066746116_n.png?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=DgiZifN_UfkAX_ovVBS&_nc_ht=scontent.fbag1-2.fna&oh=03_AVLiO6nX55Kv09IVJy4UmdBeZU5di-hSFSSAJ0AlMgm23g&oe=62BA2DE1"
+                            alt="Barbie Shoes" style="width:100%">
+                        <h1>The Superficial</h1>
+                        <p class="price">Php 1900</p>
+                        <p>This piece showcases the abject terror of being beautiful and stupid; a horrifying reminder that people see through you, as symbolized by the transparent plastic. This piece suggests that if you are that, people will, metaphorically and literally, step on you! So don’t be stupid. It will be humiliating.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/280551783_306208811720866_1141894889321312627_n.png?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=ljuYprhTbMYAX8Yl4sN&_nc_ht=scontent.fbag1-2.fna&oh=03_AVILri5kYESmdT20xB5rgkUQMHfkCFIRIb50TzhIdKFJlQ&oe=62B6FC20"
+                            alt="Disconnected Shoes" style="width:100%">
+                        <h1>Camel [Redacted]</h1>
+                        <p class="price">Php 1500</p>
+                        <p style="margin-bottom:138px;">This pair shows the disconnect one feels from the rest of society. It also highlights that you now cosplay as a camel. Buy this if you’re into that type of stuff.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/280404904_741428937271010_7447975392945258461_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=WLpE3S5_NI8AX_LhgJG&_nc_ht=scontent.fbag1-2.fna&oh=03_AVKjyOxh6P6hCDr0x_FHd-rUytuIJZMOk30QLPxt5DBTpQ&oe=62B94E7A"
+                            alt="Masked Shoes" style="width:100%">
+                        <h1>Don't Cancel Us</h1>
+                        <p class="price">Php 1800</p>
+                        <p style="margin-bottom: 90px;">This is not cultural appropriation! This is cultural appreciation. All the money you spend on this site will absolutely be used on us only. We don’t believe in “middlemen” or “charity organizations”. </p>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/284361316_357447099815956_6131590249437997399_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=zdU7mfM_uJIAX_W-qZW&tn=Ku06km0UvUg4hQ5X&_nc_ht=scontent.fbag1-2.fna&oh=03_AVI_ILGoC8NsApF3EuAOnBiLIwEW90OlOufl3juigqLdJA&oe=62B8792F"
+                            alt="Plastic Shoes" style="width:100%">
+                        <h1>The Incinerator</h1>
+                        <p class="price">Php 1300</p>
+                        <p>The future of the world is grim, much thanks to climate change, heavily influenced by plastic waste and its proliferation. Why not embrace the steady, inevitable deterioration of our planet, and accompany it with the steady, inevitable deterioration of your style! If people tell you it’s bad, blame it on the media. And tell them it’s “cutting-edge” or “avant-garde”.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/279724850_1009772756389248_2948499569354967237_n.png?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=uWZEZBIxWXwAX9WjzrW&_nc_ht=scontent.fbag1-2.fna&oh=03_AVJwrhhIEs66qWAJBVHuU7UIAqorH1YSQjM4GQGOGgGHlg&oe=62BA4F94"
+                            alt="Goblin Shoes" style="width:100%">
+                        <h1>Goblin Shoes</h1>
+                        <p class="price">200 shillings</p>
+                        <p style="margin-bottom:173px;">For when you want to go “Goblin Mode”, as the kids like to call it. Or for when you feel like an Elizabethan Clown. Either way, you’ll look questionable. 
+                        </p>
+                        &nbsp;
+                        
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/281704467_972426670093196_6312596134449298573_n.png?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=9aEV8gAHC2kAX_jK--r&_nc_ht=scontent.fbag1-2.fna&oh=03_AVL39aQr2UoF5ojqjXpg8XWw6W7sdN0QIuXd0ENobFZWog&oe=62B6A628"
+                            alt="Neon Ball Shoes" style="width:100%">
+                        <h1>Neon Ball Shoes</h1>
+                        <p class="price">Php 1200</p>
+                        <p style="margin-bottom:140px;">You are an out and proud eyesore, and that confidence does you more harm than good. We, the designers, are honestly terrified of you. This was supposed to be a social experiment. Oh well, buy it, we suppose..</p>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/280297321_3059448997605379_5692607634098728370_n.png?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=ojpSh3w26rYAX-7mejA&_nc_ht=scontent.fbag1-2.fna&oh=03_AVJWo7OCehR_FVkfP-X7cAxHtEzL_UfUn1ZE2Tx0gQcUzQ&oe=62BA1DF8"
+                            alt="Help Necklace" style="width:100%">
+                        <h1>Help Necklace</h1>
+                        <p class="price">Php 740</p>
+                        <p style="margin-bottom: 160px;">This piece says it all: Help. Help. Help us.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/281822422_1051767559096965_6509004054384046399_n.png?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=O7mrI19gqGQAX90-iof&_nc_ht=scontent.fbag1-2.fna&oh=03_AVI2ZrDoLFM8trx7c6O796oF1lxSpZtNLPz9pZhZqu1HCA&oe=62B7C128"
+                            alt="Fruit Necklace" style="width:100%">
+                        <h1>Fruit Necklace</h1>
+                        <p class="price">Php 520</p>
+                        <p style="margin-bottom:108px;">This piece will attract a flock of ravenous birds who are down to eat anything. Be wary, they tend to go for the eyes as well.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/281147652_4677977388969771_3380432417676699885_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=dkzhwjJ8HNoAX_04UFa&_nc_ht=scontent.fbag1-2.fna&oh=03_AVKQli05ZMv6nsMUuBaKdnm-bojFo0BD9suEceGJcuXsAA&oe=62B7F649"
+                            alt="Carrot Necklace" style="width:100%">
+                        <h1>24-Carrot</h1>
+                        <p class="price">Php 600 (It's not real gold)</p>
+                        <p style="margin-bottom: 60px;">24-Carrot! Get it? Because carat sounds like “carrot”? You can pair this with the fruit necklace. Then, you won’t only be attracting birds, but rabbits as well!  </p>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/281889756_5207862179321145_3195074256988391261_n.png?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=dsJ8Tcc8gJMAX9B7Bbr&_nc_ht=scontent.fbag1-2.fna&oh=03_AVLVC1rxgOdv6egUp6ZwYLbrfYv0_MdOhsJgGnfnmBFahg&oe=62B75166"
+                            alt="Plastic Shoes" style="width:100%">
+                        <h1>Tooth Ring</h1>
+                        <p class="price">Php 870 (tooth exempted)</p>
+                        <p style="margin-bottom:56px;">Show your love by proclaiming you’ll fight tooth and nail for your partner! </p>
+                        
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/280453915_709022017088114_6824803678694161968_n.png?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_ohc=XjwosWWiKVQAX-pB7M2&_nc_oc=AQkuOcQnAof0aONgMUW2oSJvhL3aNyWvM9VGie2nES7tTYUzytopul8c0ppE_n-1WXE&_nc_ht=scontent.fbag1-2.fna&oh=03_AVJlosKo5Uve8kC-7TqqbNIwX9NRMMGKW0nIGhlFSLtmbQ&oe=62B85BBC"
+                            alt="Rebel Earring" style="width:100%">
+                        <h1>Rebel Earrings</h1>
+                        <p class="price">Php 600</p>
+                        <p>This piece shows how other people use you and drag you across [expletive]. Tired of it? Want to rebel? Buy this now. 
+                        </p>
+                        &nbsp;
+                        
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/281405485_1420298291751869_5702932021584036447_n.png?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=pORCwcmser0AX90cWTC&tn=Ku06km0UvUg4hQ5X&_nc_ht=scontent.fbag1-2.fna&oh=03_AVJHD9ldHgsOPHHdNhOsG7BYrWlrSrW16Us_CzaftMowJw&oe=62B96D17"
+                            alt="Bacon Earrings" style="width:100%">
+                        <h1>Anti-Vegan</h1>
+                        <p class="price">Php 380</p>
+                        <p style="margin-bottom:50px;">For lovers of meat and those consistently accosted by vegans. .</p>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+                        </div>
+                        <footer>
+                            <p class="title" id="feet"> J2K Clothing</p>
+                            
+                              
+                              <p id="copyright">Copyright J2K Clothing &copy; 2022</p>
+                          </footer>
+                          
+                    
+        </div>
+
+    
+
+
+
+
+
+</body>
+
+</html>
